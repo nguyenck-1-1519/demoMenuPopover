@@ -12,6 +12,11 @@
 		611633E7216AF47700FB1324 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 611633E5216AF47700FB1324 /* Main.storyboard */; };
 		611633E9216AF47900FB1324 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 611633E8216AF47900FB1324 /* Assets.xcassets */; };
 		611633EC216AF47900FB1324 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 611633EA216AF47900FB1324 /* LaunchScreen.storyboard */; };
+		611633F4216AFB9000FB1324 /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 611633F3216AFB9000FB1324 /* CustomTableViewCell.swift */; };
+		611633F6216AFC3300FB1324 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 611633F5216AFC3300FB1324 /* MenuViewController.swift */; };
+		611633F8216B0BF500FB1324 /* AlwaysShowPopUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 611633F7216B0BF500FB1324 /* AlwaysShowPopUp.swift */; };
+		611633FA216B4A0A00FB1324 /* MenuAppearance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 611633F9216B4A0A00FB1324 /* MenuAppearance.swift */; };
+		611633FC216B535700FB1324 /* linen.png in Resources */ = {isa = PBXBuildFile; fileRef = 611633FB216B535700FB1324 /* linen.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +27,11 @@
 		611633E8216AF47900FB1324 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		611633EB216AF47900FB1324 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		611633ED216AF47900FB1324 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		611633F3216AFB9000FB1324 /* CustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
+		611633F5216AFC3300FB1324 /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		611633F7216B0BF500FB1324 /* AlwaysShowPopUp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlwaysShowPopUp.swift; sourceTree = "<group>"; };
+		611633F9216B4A0A00FB1324 /* MenuAppearance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuAppearance.swift; sourceTree = "<group>"; };
+		611633FB216B535700FB1324 /* linen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = linen.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,10 +66,15 @@
 			children = (
 				611633E1216AF47700FB1324 /* AppDelegate.swift */,
 				611633E3216AF47700FB1324 /* ViewController.swift */,
+				611633F3216AFB9000FB1324 /* CustomTableViewCell.swift */,
+				611633F5216AFC3300FB1324 /* MenuViewController.swift */,
 				611633E5216AF47700FB1324 /* Main.storyboard */,
 				611633E8216AF47900FB1324 /* Assets.xcassets */,
 				611633EA216AF47900FB1324 /* LaunchScreen.storyboard */,
 				611633ED216AF47900FB1324 /* Info.plist */,
+				611633F7216B0BF500FB1324 /* AlwaysShowPopUp.swift */,
+				611633F9216B4A0A00FB1324 /* MenuAppearance.swift */,
+				611633FB216B535700FB1324 /* linen.png */,
 			);
 			path = DemoTutorial;
 			sourceTree = "<group>";
@@ -124,6 +139,7 @@
 			files = (
 				611633EC216AF47900FB1324 /* LaunchScreen.storyboard in Resources */,
 				611633E9216AF47900FB1324 /* Assets.xcassets in Resources */,
+				611633FC216B535700FB1324 /* linen.png in Resources */,
 				611633E7216AF47700FB1324 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -135,8 +151,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				611633F4216AFB9000FB1324 /* CustomTableViewCell.swift in Sources */,
 				611633E4216AF47700FB1324 /* ViewController.swift in Sources */,
+				611633FA216B4A0A00FB1324 /* MenuAppearance.swift in Sources */,
 				611633E2216AF47700FB1324 /* AppDelegate.swift in Sources */,
+				611633F6216AFC3300FB1324 /* MenuViewController.swift in Sources */,
+				611633F8216B0BF500FB1324 /* AlwaysShowPopUp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,7 +302,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = DemoTutorial/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -290,6 +312,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = shin.DemoTutorial;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -299,7 +322,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = DemoTutorial/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -307,6 +332,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = shin.DemoTutorial;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
